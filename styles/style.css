@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
+@import url("https://fonts.cdnfonts.com/css/miama");
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +8,30 @@
 }
 
 /* Shared styles start from here */
+.btn-primary {
+    border-radius: 42px;
+    background: #e6533c;
 
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    border-radius: 42px;
+    background: transparent;
+    border: 1px solid white;
+
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 10px 30px;
+    cursor: pointer;
+}
 /* Shared styles end here */
 
 /* Header section start from here */
@@ -62,7 +85,7 @@
     font-weight: 400;
 }
 
-.header span {
+.header .nav-style-item {
     border-radius: 46px;
     background: #e6533c;
     padding: 8px 20px;
@@ -75,6 +98,9 @@
 }
 
 @media screen and (max-width: 576px) {
+    .header .navigation {
+        width: 90%;
+    }
     .header nav .nav-items {
         display: none;
     }
@@ -89,4 +115,161 @@
     }
 }
 /* Navbar section end here */
+
+/* Banner section start from here */
+.banner {
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    position: static;
+}
+
+.banner .banner-info {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.banner .banner-info .banner-title {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 90px;
+    margin-bottom: 28px;
+}
+.banner .banner-info .banner-title .miama {
+    font-family: Miama;
+    font-size: 5rem;
+}
+.banner .banner-info .banner-description {
+    color: #ffffff80;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 28px;
+}
+
+.banner .banner-info .b-btn-2 {
+    margin-left: 20px;
+}
+
+.banner .banner-image {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    background-image: url("../images/banner-img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.banner .banner-image img {
+    width: 100%;
+    height: 10%;
+}
+
+.banner .banner-image .card {
+    border: 1px solid #ffffff1a;
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: #ffffff1a;
+    width: 200px;
+    height: max-content;
+    text-align: left;
+    line-height: 40px;
+    padding: 10px;
+}
+.banner .banner-image .card .card-title {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.banner .banner-image .card .card-description {
+    color: #efede8a6;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.banner-image .card-1 {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.banner-image .card-2 {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.banner-image .card-2 .icon {
+    width: 30px;
+    height: 30px;
+    background-color: #e6533c;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        height: max-content;
+    }
+    .banner .banner-info {
+        width: 100%;
+        height: max-content;
+    }
+    .banner .banner-info .banner-title {
+        font-size: 2.5rem;
+        line-height: normal;
+    }
+    .banner .banner-image {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        margin-top: 40px;
+    }
+    .header .banner {
+        width: 90%;
+        flex-direction: column;
+        height: max-content;
+        margin-top: 40px;
+    }
+
+    .banner .banner-info .b-btn-2 {
+        margin-left: 0;
+    }
+    .b-btn-1,
+    .b-btn-2 {
+        width: 48%;
+        padding: 15px 10px;
+        margin: 1%;
+    }
+
+    .banner .banner-image .card {
+        width: 150px;
+        line-height: 20px;
+        padding: 20px 10px;
+    }
+
+    .banner .banner-image .card .card-title {
+        color: #ffffff;
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+
+    .banner .banner-image .card .card-description {
+        font-size: 0.8rem;
+    }
+    .banner-image .card-2 .icon {
+        width: 30px;
+        height: 30px;
+        background-color: #e6533c;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+}
+/* Banner section end here */
 /* Header section end here */
