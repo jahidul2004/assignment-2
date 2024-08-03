@@ -451,6 +451,7 @@ main {
         margin: 0;
         width: 100%;
         height: 100%;
+        margin-bottom: 20px;
     }
     .run-extra-btn {
         width: 100%;
@@ -459,3 +460,163 @@ main {
 }
 
 /* Run an extra mile section end here */
+
+/* BMI calculatore section start from here */
+.bmi-calculatore {
+    width: 100%;
+    height: max-content;
+    margin-top: 80px;
+    padding: 40px 0;
+}
+
+.bmi-calculatore-info {
+    width: 50%;
+    height: max-content;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.bmi-calculatore-info .bmi-title {
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.bmi-calculatore-info .bmi-description {
+    color: #ffffff80;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+.bmi-calculatore .calculate-bmi {
+    width: 100%;
+    background-color: #222222;
+    padding: 40px 0;
+}
+
+.calculate-bmi .bmi-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.bmi-container .bmi-chart {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.bmi-container .bmi-chart .chart {
+    width: 60%;
+    height: 100%;
+}
+.bmi-chart .chart .chart-header {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.bmi-chart .chart table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+.bmi-chart .chart table th,
+td {
+    border: 1px solid #ffffff80;
+    color: #ffffff80;
+    padding: 5px;
+}
+
+.bmi-container .bmi-form {
+    width: 50%;
+}
+.bmi-form .form-title {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+
+.bmi-form .form-description {
+    color: #ffffff80;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    margin-bottom: 10px;
+}
+
+.bmi-form input {
+    width: 48%;
+    height: 50px;
+    margin: 1%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #ffffff1a;
+    border-radius: 8px;
+    color: #ffffff80;
+}
+.bmi-form input::placeholder {
+    color: #ffffff80;
+}
+.bmi-form .activity,
+.sex {
+    width: 98%;
+    margin: 1%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: #ffffff1a;
+    border-radius: 8px;
+    color: #ffffff80;
+    margin-bottom: 15px;
+}
+
+.bmi-form .sex {
+    width: 48%;
+    margin: 0;
+}
+
+.bmi-form .activity option {
+    background-color: black;
+}
+.bmi-form .sex option {
+    background-color: black;
+}
+
+.bmi-form .bmi-btn {
+    width: 40%;
+}
+
+@media screen and (max-width: 576px) {
+    .calculate-bmi .bmi-container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bmi-calculatore-info {
+        width: 90%;
+    }
+
+    .bmi-container .bmi-chart,
+    .bmi-container .bmi-form {
+        width: 90%;
+    }
+    .bmi-container .bmi-chart .chart {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .bmi-form .bmi-btn {
+        padding: 15px;
+        width: 50%;
+    }
+}
+/* BMI Calculatore section end here */
