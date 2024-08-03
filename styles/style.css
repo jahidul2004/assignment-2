@@ -431,6 +431,7 @@ main {
 @media screen and (max-width: 576px) {
     .run-extra {
         flex-direction: column;
+        width: 90%;
         height: max-content;
     }
     .run-extra .run-extra-info {
