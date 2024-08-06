@@ -737,7 +737,8 @@ td {
     width: 80%;
     height: max-content;
     margin: 0 auto;
-    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 100px;
 }
 .happy-client .client-info-container {
     width: 60%;
@@ -800,3 +801,84 @@ td {
     }
 }
 /* Client review section ends here */
+
+/* Footer section style start from here */
+footer {
+    width: 100%;
+    height: max-content;
+    background-color: #222222;
+}
+footer .footer-area {
+    margin: 0 auto;
+    width: 80%;
+    height: max-content;
+    padding-top: 60px;
+}
+.footer-area .footer-sections {
+    display: flex;
+    padding-bottom: 40px;
+}
+.footer-area .footer-sections .site-info {
+    width: 50%;
+    padding-right: 50px;
+}
+.footer-area .footer-sections .get-started {
+    width: 25%;
+}
+.footer-area .copyright-area {
+    text-align: center;
+    padding: 10px 0;
+}
+.footer-sections .site-info .logo {
+    color: #e6533c;
+    font-size: 4rem;
+    font-weight: 800;
+    font-style: italic;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+.footer-sections .site-info .site-description {
+    color: #ffffff80;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+.footer-sections .get-started .get-start-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.footer-sections .get-started .get-started-item a {
+    text-decoration: none;
+    color: #ffffff80;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.footer-area .copyright-area p {
+    color: #ffffff80;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+.footer-area .horizontal {
+    border: 1px solid #ffffff80;
+}
+
+@media screen and (max-width: 576px) {
+    .footer-area .footer-sections {
+        flex-direction: column;
+    }
+    .footer-area {
+        width: 90%;
+    }
+    .footer-area .footer-sections .site-info {
+        width: 100%;
+    }
+    .footer-area .footer-sections .get-started {
+        width: 100%;
+    }
+}
+/* Footer section styes end here */
