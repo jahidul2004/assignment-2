@@ -641,7 +641,7 @@ td {
     color: white;
     font-size: 3rem;
     font-weight: 900;
-    line-height: 40px;
+    line-height: 45px;
     margin-bottom: 20px;
 }
 
@@ -731,3 +731,72 @@ td {
     }
 }
 /* Meet our team section end here */
+
+/* Client review styles section start from here */
+.happy-client {
+    width: 80%;
+    height: max-content;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.happy-client .client-info-container {
+    width: 60%;
+    height: max-content;
+    margin: 0 auto;
+    text-align: center;
+    line-height: normal;
+}
+.happy-client .client-info-container .info-title {
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 45px;
+    margin-bottom: 15px;
+}
+.happy-client .client-info-container .info-description,
+.client-container .client .client-spech {
+    color: #ffffff80;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+.happy-client .client-container {
+    width: 100%;
+    height: max-content;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.happy-client .client-container .client {
+    width: 30%;
+    height: max-content;
+    background-color: #222222;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+    padding: 20px;
+}
+.happy-client .client-container .client .client-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 576px) {
+    .happy-client {
+        width: 90%;
+    }
+    .happy-client .client-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .happy-client .client-container .client {
+        width: 100%;
+    }
+    .happy-client .client-info-container {
+        width: 90%;
+    }
+}
+/* Client review section ends here */
