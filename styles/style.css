@@ -213,6 +213,15 @@
     border-radius: 50%;
     margin: 0 20px;
 }
+.banner-image .card-2 .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-image .card-2 .icon img {
+    width: 60%;
+    height: 60%;
+}
 
 @media screen and (max-width: 576px) {
     .header {
