@@ -15,7 +15,7 @@
     color: white;
     font-size: 1.1rem;
     font-weight: 600;
-    padding: 6px 30px;
+    padding: 12px 30px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -29,7 +29,7 @@
     color: white;
     font-size: 1.1rem;
     font-weight: 600;
-    padding: 5px 30px;
+    padding: 11px 30px;
     cursor: pointer;
 }
 /* Shared styles end here */
@@ -59,6 +59,7 @@
     justify-content: space-between;
     align-items: center;
     color: white;
+    padding-top: 20px;
 }
 .header .navigation nav ul a {
     text-decoration: none;
@@ -70,6 +71,7 @@
     list-style: none;
     border: 1px solid #ffffff1a;
     border-radius: 39px;
+    padding: 10px;
 }
 
 .header nav .nav-logo .logo {
@@ -787,6 +789,7 @@ td {
     border-bottom-right-radius: 30px;
     text-align: center;
     padding: 20px;
+    border: 1px solid white;
 }
 .happy-client .client-container .client .client-img {
     width: 100px;
